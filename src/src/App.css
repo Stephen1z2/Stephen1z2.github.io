@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff5f8; /* Soft pink background for the entire page */
+  color: #4a4a4a; /* Neutral text color */
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #ffe4e1; /* Light pink background for the main container */
+  border-radius: 16px; /* Softer corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #d63384); /* Pink glow */
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #6a1b9a); /* Purple glow */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background: linear-gradient(135deg, #ffe4e1, #fff0f5); /* Gradient background */
+  border: none; /* Remove border */
+  border-radius: 16px; /* Softer corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+}
+
+.read-the-docs {
+  color: #d63384; /* Pink text */
+}
+
+.flower {
+  position: absolute;
+  width: 80px; /* Slightly smaller size */
+  height: 80px;
+  opacity: 0.8;
+}
+
+.flower.top-left {
+  top: 10px;
+  left: 10px;
+  transform: rotate(-10deg);
+}
+
+.flower.top-right {
+  top: 10px;
+  right: 10px;
+  transform: rotate(10deg);
+}
+
+.flower.bottom-left {
+  bottom: 10px;
+  left: 10px;
+  transform: rotate(10deg);
+}
+
+.flower.bottom-right {
+  bottom: 10px;
+  right: 10px;
+  transform: rotate(-10deg);
+}
